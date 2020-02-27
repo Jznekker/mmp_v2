@@ -3,13 +3,6 @@
 	2.25.2020
 */
 
-//global scope
-var kidImage; 
-
-function preload() {
-	kidImage = loadImage("kid.png");
-}
-
 function setup() {
 	var canvas = createCanvas(500, 500);
 	canvas.drawingContext.miterLimit = 2;
@@ -18,16 +11,13 @@ function setup() {
 function draw() {
 	background('white');
 
-	// draw
-	image(kidImage, 0, 0, 550, 510);
-
 	var world = 'Enjoy my works';
 	var end = map(frameCount, 0, 200, 0, world.length);
 
 	textAlign(LEFT);
 	textSize(75);
 	fill('yellow');
-	stroke('red');
+	stroke('blue');
 	strokeWeight(10)
 	textStyle(ITALIC);
 	textFont('Segoe UI');
