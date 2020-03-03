@@ -21,7 +21,7 @@ function draw() {
 	// draw
 	image(kidImage, 0, 0, 550, 510);
 
-	var world = 'Enjoy my works';
+	var world = 'When you got an A+ on your test';
 	var end = map(frameCount, 0, 200, 0, world.length);
 
 	textAlign(LEFT);
