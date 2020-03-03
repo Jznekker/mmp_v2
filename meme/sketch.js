@@ -25,7 +25,7 @@ function draw() {
 	var end = map(frameCount, 0, 200, 0, world.length);
 
 	textAlign(LEFT);
-	textSize(75);
+	textSize(30);
 	fill('yellow');
 	stroke('red');
 	strokeWeight(10)
