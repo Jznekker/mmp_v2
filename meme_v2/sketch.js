@@ -28,18 +28,19 @@ function draw() {
 	}
 
 	var world = 'Feel free to touch me :D';
-	var end = map(frameCount, 0, 150, 0, world.length);
+	// var end = map(frameCount, 0, 150, 0, world.length);
 	if (mouseIsPressed) {
-		world = 'Chiiiill';
+		world = 'Heeelppp';
 	} 
+	text(world, 60, 150);
 
 	textAlign(LEFT);
 	textSize(30);
-	fill('yellow');
-	stroke('red');
-	strokeWeight(10)
+	fill('white');
+	stroke('black');
+	strokeWeight(5)
 	textStyle(ITALIC);
 	textFont('Segoe UI');
-	text(world.substring(0, end), 0, 250);
+	// text(world.substring(0, end), 0, 250);
 
 }
