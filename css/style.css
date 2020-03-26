@@ -4,6 +4,10 @@
     font-family: 'Spicy Rice', cursive;
 }
 
+h2{
+    color: #000;
+}
+
 .menu{
     width: 550;
     height: 55px;
