@@ -3,50 +3,32 @@
 	04.18.2020
 */	
 
-var angleSlider;
-var nameInput;
+/*
+	Pattern
+	04.21.2020
+*/
 
 function setup() {
-	createCanvas(640, 360);
-	noStroke();
-
-	angleSlider = createSlider(0, TWO_PI, 0, PI * 0.01);
-	angleSlider.input(pattern);
-
-	var patternButton = createButton("New Pattern");
-	patternButton.mousePressed(pattern);
-
-	var saveButton = createButton("Save Image");
-	saveButton.mousePressed(saveImage);
-
-	nameInput = createInput("Leave a music name here");
-
-	pattern();
-
+	createCanvas(500, 500);
 }
 
-function saveImage() {
-	save("pattern.png");
-}
+function draw() {
+	background(51);
 
+	var w = 100; // width of one cell
+	var h = w;  // height of one cell
 
-function pattern() {
-	background(' yellow');
+	for (let x = 0; x <= width; x += w) {
+		for (let y = 0; y <= height; y+= h) {
+			ellipse(x + 50, y + 50, w);
 
-	for (let x = 0; x <= width + 100; x += 100) {
+			fill('plum');
+			line(x + 100, y, 350, 250);
+			line(x, y, 350, 250);
 
-		push();
-		translate(x, height/2);
-		rotate(angleSlider.value * PI);
-		fill('purple');
-		ellipse(0, 0, random(100, 200), random(100, 200));
-		pop();
+			line(x + 100, y, 350, 230);
+			line(x, y, 350, 230);
+		}
 	}
 
-	textAlign(CENTER, CENTER);
-	textSize(50);
-	fill('purple');
-	stroke('plump');
-	strokeWeight(5);
-	text(nameInput.value(), width/2, height/2);
-}
+}	
