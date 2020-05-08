@@ -1,5 +1,25 @@
 <!doctype html>
 <html>
+    <style>
+        .inst{
+            margin-top: 10vh;
+            margin-left: 5vh;
+            background: #fff;
+            max-width: 30vh;
+        }
+
+        .inst p{
+            font-size: 20px;
+        }
+
+        button{
+            margin-left: 5vh;
+            background: gold;
+            border-radius: 2px;
+            font-size: 15px;
+            color: black;
+        }
+    </style>
     <head>
         <title>MMP 210</title>
         <link rel="stylesheet" href="../css/style.css">
@@ -24,6 +44,8 @@
 
                 <li><a href="../sound/index.html">Sound example</a></li>
                 <li><a href="../keyboard/index.html">Keyboard example</a></li>
+
+                <li><a href="../Presentation/index.html">Final Project Pitch</a></li>
                 <li><a href="../final/index.html">Final Project</a></li>
              </ul>        
          </nav>    
@@ -37,9 +59,19 @@
         <div id="canvas-container">
    <canvas>Your browser doesn't support canvas</canvas>
         <script src="p5.min.js"></script>
+        <script src="p5.sound.js"></script>
         <script src="sketch.js"></script>
 
-</div>
+    </div>
+
+    <div class="inst">
+        <h1>Instructions: </h1>
+        <p>Arrow key Up and Down to change torso colors</p>
+        <p>Arrow key Right and Left to change pants colors</p>
+        <p>Keys N and M to change skin color</p>
+        <p>Keys J and K to change shoes colors</p>
+        <p>Keys from 1 to 5 to change background</p>
+    </div>
         
     </body>
 </html>

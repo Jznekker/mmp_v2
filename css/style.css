@@ -54,12 +54,3 @@ body{
     background-attachment: fixed;
     font-family:Franklin Gothic Medium;
 }
-
-button{
-    display: block;
-    background: yellow;
-    border: 2px solid purple;
-    border-radius: 2px;
-    text-transform: uppercase;
-    float: right;
-}
